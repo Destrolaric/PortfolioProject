@@ -1,0 +1,159 @@
+@font-face {
+    font-family: Galindo;
+    src: url('Galindo-Regular.ttf');
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Galindo,sans-serif;
+}
+
+
+.text-content{
+    position: static;
+    width: auto;
+    height: auto;
+    left: calc(50% - 90vw/2 - 20vw);
+    top: 61px;
+    font-family: "Galindo",sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+
+    color: #000000;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    align-self: flex-start;
+    margin: 0 0;
+}
+.text-container {
+
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 76px;
+
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(199, 202, 200, 0.859375) 16.15%, rgba(143, 143, 143, 0.97) 31.77%, rgba(95, 95, 95, 0.79) 61.98%, rgba(72, 72, 72, 0.702973) 73.96%, rgba(41, 41, 41, 0.65) 81.25%, rgba(7, 7, 7, 0.78) 94.27%);
+    opacity: 0.5;
+    border: 0  solid #909090;
+    box-sizing: border-box;
+}
+
+.nav-container {
+
+    display: flex;
+
+
+    position: absolute;
+    width: 100vw;
+    height: 76px;
+    top: 0;
+
+    background: #212821;
+}
+
+.nav-items {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    height: 10vh;
+    left: 0;
+    top: 0;
+
+
+    /* Inside Auto Layout */
+
+}
+.text-and-picture  {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+header p {
+    width: 70vw;
+    height: auto;
+    left: calc(50% - 90vw / 2 - 30vw);
+    top: auto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+
+    color: #000000;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    align-self: flex-start;
+    margin: 0 0;
+}
+
+.me-image {
+
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: calc(50% - 25vw/2 + 40vw);
+    top: auto;
+
+
+}
+
+.text-navigation {
+    top:40px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 90vw;
+    height: 35px;
+    left: 0;
+    z-index: 1;
+    list-style: none;
+    justify-content: space-evenly;
+    
+
+}
+
+.text-navigation li a {
+    color: #007913;
+    font-family: Galindo,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+
+    display: flex;
+
+}
+
+.text-navigation li:first-child {
+    font-family: Galindo,sans-serif;
+
+    color: #FFCC00;
+
+}
+
+.icon-navigation {
+
+    /* Auto Layout */
+
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+
+    position: absolute;
+    width: 96px;
+    height: 32px;
+    left: 10px;
+    top:0;
+    z-index: 1;
+}
+
