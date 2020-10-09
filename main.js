@@ -6,7 +6,16 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'html');
 app.set('port', process.env.PORT || 8888);
 app.use(bodyparser.json());
-app.get('*', function(req, res) {
-    res.sendFile(path.join(__dirname + '/index.html'));
+app.get('', function (req, res) {
+    res.sendFile(path.join(__dirname + '/aboutme.html'));
 });
-app.listen(8888,'0.0.0.0')
+app.get('/skills.html', function (req, res) {
+    res.sendFile(path.join(__dirname + '/skills.html'));
+});
+app.get('/experience.html', function (req, res) {
+    res.sendFile(path.join(__dirname + '/experience.html'));
+});
+app.get('/aboutme.html', function (req, res) {
+    res.sendFile(path.join(__dirname + '/aboutme.html'));
+});
+app.listen(8880, '0.0.0.0')
