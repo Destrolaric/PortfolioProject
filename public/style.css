@@ -7,7 +7,7 @@ body {
     margin: 0px;
     font-family: Galindo,sans-serif;
     display: block;
-    background: #214c21;
+    background: #bbbbbb;
 }
 head{
     width: auto;
@@ -106,7 +106,7 @@ p {
     display: flex;
     flex-direction: row;
     position: absolute;
-    top: 10px;
+    top: 15px;
     width: 100vw;
     height: 35px;
     left: 0;
@@ -138,8 +138,8 @@ p {
     padding: 0;
     position: fixed;
     z-index: 2;
-    width: 96px;
-    height: 64px;
+    width: 138px;
+    height: 32px;
 }
 .icon-navigation li a{
     width: 32px;
@@ -151,8 +151,7 @@ p {
     justify-content: space-evenly;
 }
 .data li {
-    border-color: black;
-    border-style: solid;
+
 }
 h1{
     margin-top: 100px;
