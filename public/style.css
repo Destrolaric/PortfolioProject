@@ -1,11 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic|Playfair+Display+SC:400,700&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:400,700,400italic,700italic&subset=latin,cyrillic);
+
 @font-face {
-    font-family: Galindo;
-    src: url('Galindo-Regular.ttf');
+    font-family: Impact;
+    /*src: url('Galindo-Regular.ttf');*/
 }
 
 body {
-    margin: 0px;
-    font-family: Galindo,sans-serif;
+    margin: 0;
     display: block;
     background: #bbbbbb;
 }
@@ -13,13 +15,12 @@ head{
     width: auto;
     height: auto;
 }
-.text-container{
-}
 .text-content{
+    font-family: 'Open Sans', sans-serif;
+
     position: static;
     width: auto;
     height: auto;
-    font-family: "Galindo",sans-serif;
     font-weight: normal;
     font-size: 24px;
     line-height: 34px;
@@ -58,7 +59,7 @@ head{
     height: 50px;
     width: 100vw;
     position: fixed;
-    top: 0px;
+    top: 0;
     z-index: 1;
 }
 p {
@@ -106,7 +107,6 @@ p {
     display: flex;
     flex-direction: row;
     position: absolute;
-    top: 15px;
     width: 100vw;
     height: 35px;
     left: 0;
@@ -114,14 +114,14 @@ p {
     list-style: none;
     justify-content: space-evenly;
     color: black;
-
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
 }
 
 .text-navigation li a {
     color: #007913;
-    font-family: Galindo,sans-serif;
-    font-style: normal;
-    font-weight: normal;
+    font-family: 'Playfair Display SC',sans-serif;
 
     display: flex;
 
@@ -154,5 +154,7 @@ p {
 
 }
 h1{
+    font-family: 'Playfair Display SC',sans-serif;
+
     margin-top: 100px;
 }
