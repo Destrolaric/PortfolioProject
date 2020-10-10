@@ -18,4 +18,4 @@ app.get('/experience.html', function (req, res) {
 app.get('/aboutme.html', function (req, res) {
     res.sendFile(path.join(__dirname + '/aboutme.html'));
 });
-app.listen(8080, '0.0.0.0')
+app.listen(process.env.PORT || 5000)
