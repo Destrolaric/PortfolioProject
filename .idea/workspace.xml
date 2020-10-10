@@ -49,6 +49,11 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/pict" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="main.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="main.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
@@ -102,6 +107,10 @@
       <screen x="0" y="0" width="1920" height="1043" />
     </state>
     <state x="418" y="179" width="1084" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1043@0.0.1920.1043" timestamp="1600696511864" />
+    <state x="632" y="357" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602327900206">
+      <screen x="0" y="32" width="1920" height="1048" />
+    </state>
+    <state x="632" y="357" key="#com.intellij.fileTypes.FileTypeChooser/0.32.1920.1048@0.32.1920.1048" timestamp="1602327900206" />
     <state width="1897" height="343" key="GridCell.Tab.0.bottom" timestamp="1602257225458">
       <screen x="0" y="32" width="1920" height="1048" />
     </state>
