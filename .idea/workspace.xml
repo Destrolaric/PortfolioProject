@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="daadd6fd-0d77-4773-82ec-f6cf747f295e" name="Default Changelist" comment="Changes in site design, added second and third page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +61,7 @@
       <workItem from="1601634751142" duration="611000" />
       <workItem from="1601635546511" duration="4150000" />
       <workItem from="1602243764901" duration="9469000" />
-      <workItem from="1602321237819" duration="555000" />
+      <workItem from="1602321237819" duration="1601000" />
     </task>
     <task id="LOCAL-00001" summary="Changes in site design, added second and third page">
       <created>1602254998844</created>
@@ -186,5 +186,18 @@
       <screen x="0" y="32" width="1920" height="1048" />
     </state>
     <state x="690" y="470" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.32.1920.1048@0.32.1920.1048" timestamp="1602244997397" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/main.js</url>
+          <line>17</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="temporary" value="true" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "start": "node main.js"
+  },
   "name": "PortfolioProject",
   "version": "1.0.0",
   "dependencies": {
