@@ -7,10 +7,13 @@
 }
 
 body {
-    margin: 0;
-    display: block;
+
+    width: 100%;
+    height: 100%;
     background: #bbbbbb;
-    background-image: url("/pict/iss063e076166.jpg");
+    background-image: url("/pict/small-memory-8k-2a-7680x4320.jpg");
+    background-repeat: no-repeat;
+    background-size:100%;
 }
 head{
     width: auto;
@@ -57,7 +60,9 @@ head{
 }
 .panel{
     color: black;
-    background: #363636;
+
+    backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.4);
     height: 50px;
     width: 100vw;
     position: fixed;
@@ -67,7 +72,7 @@ head{
 .text-content{
     box-sizing: border-box;
     backdrop-filter: blur(5px);
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.4);
     width: min-content;
     margin: 0 auto;
 }
@@ -124,14 +129,13 @@ p {
     z-index: 1;
     list-style: none;
     justify-content: space-evenly;
-    color: black;
     font-size: 30px;
     font-style: normal;
     font-weight: 600;
 }
 
 .text-navigation li a {
-    color: #007913;
+    color: #000000;
     font-family: 'Playfair Display SC',sans-serif;
 
     display: flex;
