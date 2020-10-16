@@ -8,23 +8,25 @@
 
 body {
     position: static;
-    height: auto;
+    height: 100vh;
     background-image: url("/pict/small-memory-8k-2a-7680x4320.jpg");
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
     background-attachment: fixed;
+    background-position: center;
 
 }
-
 .text-content{
-
     font-family: 'Open Sans', sans-serif;
-
-    position: static;
-    width: auto;
+    box-sizing: border-box;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.4);
+    width: min-content;
+    margin: auto auto;
+    position: center;
     height: auto;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 34px;
     text-align: center;
 
@@ -32,7 +34,6 @@ body {
 
     flex: none;
     align-self: flex-start;
-    margin: 0;
 }
 .data{
     list-style: none;
@@ -56,13 +57,12 @@ body {
     align-items: stretch;
 }
 .email{
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(5px);
     background-color: rgba(255, 255, 255, 0.4);
     width: min-content;
-    font-size: 32px;
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
+    font-size: 40px;
+    position:absolute;
+
 }
 .panel{
     display: flex;
@@ -72,24 +72,18 @@ body {
     margin: 0;
     backdrop-filter: blur(15px);
     background-color: rgba(255, 255, 255, 0.4);
-    height: 2em;
+    height: 35px;
     width: 100%;
     position: fixed;
     top: 0;
     list-style: none;
 }
-.text-content{
-    box-sizing: border-box;
-    backdrop-filter: blur(5px);
-    background-color: rgba(255, 255, 255, 0.4);
-    width: min-content;
-    margin: 0 auto;
-}
+
 p {
     white-space: nowrap;
     width: auto;
 
-    font-size: 30px;
+    font-size: 20px;
     line-height: 34px;
     text-align: center;
 
@@ -133,7 +127,7 @@ p {
     height: 35px;
     list-style: none;
     justify-content: space-evenly;
-    font-size: 30px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
 }
