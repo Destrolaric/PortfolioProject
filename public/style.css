@@ -8,7 +8,6 @@
 
 body {
     position: static;
-    height: 100vh;
     background-image: url("/pict/small-memory-8k-2a-7680x4320.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -62,7 +61,8 @@ body {
     width: min-content;
     font-size: 40px;
     position:absolute;
-
+    bottom: 8px;
+    right: 16px;
 }
 .panel{
     display: flex;
