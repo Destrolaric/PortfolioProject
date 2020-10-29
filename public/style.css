@@ -13,22 +13,24 @@ body {
     background-size: 100% auto;
     background-attachment: fixed;
     background-position: center;
-    margin: 0 0;
 
 }
 .text-content{
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
-    #backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
     background-color: rgba(255, 255, 255, 0.4);
     width: min-content;
-    margin: 0 auto;
+    margin: auto auto;
     position: center;
-    height: min-content;
+    height: auto;
     font-weight: normal;
     font-size: 20px;
+    line-height: 34px;
     text-align: center;
-    top: 35px;
+
+    /* Inside Auto Layout */
+
     flex: none;
     align-self: flex-start;
 }
@@ -54,34 +56,25 @@ body {
     align-items: stretch;
 }
 .email{
+    backdrop-filter: blur(5px);
     background-color: rgba(255, 255, 255, 0.4);
     width: min-content;
-    font-size: 30px;
-    position:static;
-    margin: 35px 0;
-
-}
-h3{
-    margin: 0 0;
-}
-h2{
-    margin: 0 0;
-}
-h1{
-    margin: 0 0;
+    font-size: 40px;
+    position:absolute;
+    bottom: 8px;
+    right: 16px;
 }
 .panel{
-    z-index: 1;
     display: flex;
     color: black;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 0;
+    margin: 0;
+    backdrop-filter: blur(15px);
     background-color: rgba(255, 255, 255, 0.4);
     height: 35px;
     width: 100%;
     position: fixed;
-    padding: 0;
     top: 0;
     list-style: none;
 }
@@ -91,6 +84,7 @@ p {
     width: auto;
 
     font-size: 20px;
+    line-height: 34px;
     text-align: center;
 
     color: #000000;
