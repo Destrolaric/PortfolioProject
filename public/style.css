@@ -10,7 +10,7 @@ body {
     position: static;
     background-image: url("/pict/small-memory-8k-2a-7680x4320.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% auto;
     background-attachment: fixed;
     background-position: center;
     margin: 0 0;
