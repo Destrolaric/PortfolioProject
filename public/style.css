@@ -87,7 +87,7 @@ h1{
 
 p {
     width: 60vw;
-    white-space: pre-wrap;
+    white-space: pre-line;
     font-size: 30px;
     text-align: center;
 
@@ -116,12 +116,8 @@ p {
 
 
 }
-.about_content{
-    display: flex;
-    list-style: none;
-
-    flex-direction: row;
-    justify-content: space-evenly;
+img {
+    float: right;
 }
 
 .text-navigation {
