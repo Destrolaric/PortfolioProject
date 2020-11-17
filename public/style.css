@@ -76,7 +76,7 @@ h1{
     flex-direction: row;
     justify-content: space-between;
     margin: 0 0;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.9);
     height: 35px;
     width: 100%;
     position: fixed;
@@ -84,9 +84,17 @@ h1{
     top: 0;
     list-style: none;
 }
+.skills{
+    display: block;
+    flex-direction: row;
+    list-style: none;
+}
+.skills li a{
+    width: 50%;
 
+}
 p {
-    width: 60vw;
+    width: 50vw;
     white-space: pre-line;
     font-size: 30px;
     text-align: center;
@@ -163,8 +171,8 @@ img {
     flex-direction: row;
     justify-content: space-evenly;
 }
-.data li {
-
+.lst{
+    list-style: none;
 }
 h1{
     font-family: 'Playfair Display SC',sans-serif;
