@@ -6,5 +6,5 @@ https://www.figma.com/file/icSxDT56qMKVUjC2Djbnzi/Untitled?node-id=1%3A45<br>
 www.destrolaric.tk
 <h2>
 <p>
-Currently creating my own Portfolio, I prefer it to be cool looking. I am open to suggestions and critics about design.
+Currently creating my own Portfolio, I prefer it to be cool looking. I am open to suggestions and critics about the design.
 </p>
