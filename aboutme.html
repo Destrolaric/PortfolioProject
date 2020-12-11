@@ -9,103 +9,130 @@
     <link rel="stylesheet" type="text/css" href="/style.css"/>
 
 </head>
-<script>let randomizedArray = function (length, min, max) {
-    return Array.from({length: length}, () => Math.floor(min + Math.random() * (max - min)));
-}
-let getMin = function (array) {
-    if (Array.isArray(array) || array.length != 0)
-        return null;
-    let min = array[0];
-    array.forEach(element => min = min < element ? min : element);
-    return min
-}
-let getMax = function (array) {
-    if (!Array.isArray(array) || array.length != 0)
-        return null;
-    let max = array[0];
-    array.forEach(element => max = max > element ? max : element);
-    return max
-}
-let getMedian = function (array) {
-    if (!Array.isArray(array) || array.length === 0) {
-        return null;
+<script>
+    let randomizedArray = function (length, min, max) {
+        return Array.from({length: length}, () => Math.floor(min + Math.random() * (max - min)));
     }
-    return array[Math.round(array.length / 2)];
-}
-
-let quickSort = function (array) {
-    if (!Array.isArray(array) || array.length < 2) {
-        return array;
+    let getMin = function (array) {
+        if (Array.isArray(array) || array.length !== 0)
+            return null;
+        let min = array[0];
+        array.forEach(element => min = min < element ? min : element);
+        return min
+    }
+    let getMax = function (array) {
+        if (!Array.isArray(array) || array.length !== 0)
+            return null;
+        let max = array[0];
+        array.forEach(element => max = max > element ? max : element);
+        return max
+    }
+    let getMedian = function (array) {
+        if (!Array.isArray(array) || array.length === 0) {
+            return null;
+        }
+        return array[Math.round(array.length / 2)];
     }
 
-    let swap = function (array, idx1, idx2) {
-        let temp = array[idx1]
-        array[idx1] = array[idx2]
-        array[idx2] = temp
+    let quickSort = function (array) {
+        if (!Array.isArray(array) || array.length < 2) {
+            return array;
+        }
+
+        let swap = function (array, idx1, idx2) {
+            let temp = array[idx1]
+            array[idx1] = array[idx2]
+            array[idx2] = temp
+        }
+
+        let partition = function (array, left, right) {
+            let pivot = array[right]
+            let split = left - 1
+
+            for (let i = left; i < right; i++) {
+                if (array[i] <= pivot) {
+                    ++split;
+                    swap(array, i, split)
+                }
+            }
+            swap(array, split + 1, right)
+            return split
+        }
+
+        let qSortRec = function (array, left, right) {
+            if (left >= right) {
+                return
+            }
+
+            let mid = partition(array, left, right);
+            qSortRec(array, left, mid);
+            qSortRec(array, mid + 1, right);
+        }
+
+        return qSortRec(array, 0, array.length - 1);
     }
 
-    let partition = function (array, left, right) {
-        let pivot = array[right]
-        let split = left - 1
+    const printTagsCount = function () {
+        let map = new Map()
+        for (const tag of document.querySelectorAll('*')) {
+            let name = tag.tagName
+            if (!map.has(name)) {
+                map.set(name, 0)
+            }
+            map.set(name, map.get(name) + 1)
+        }
+        console.log(map)
+    }
+    let myArray = randomizedArray(1000, 0, 100000)
 
-        for (let i = left; i < right; i++) {
-            if (array[i] <= pivot) {
-                ++split;
-                swap(array, i, split)
+    console.log(myArray)
+    console.log('min', getMin(myArray))
+    console.log('max', getMax(myArray))
+    console.log('med', getMedian(myArray))
+
+    quickSort(myArray)
+    console.log(myArray)
+    console.log('med', getMedian(myArray))
+
+    printTagsCount()
+</script>
+<script>
+    window.onload = () => {
+        const button = document.getElementById('button')
+        const text_to_show = document.getElementById('icon-navigation')
+        const pict = document.getElementById('picture')
+        const body = document.getElementsByTagName('body')[0]
+        pict.onclick = function (){
+            body.style.backgroundImage = "url('/pict/626576.jpg')"
+        }
+        body.onclick= function (){
+            console.log(body.style.backgroundImage)
+            if (body.style.backgroundImage === 'url("/pict/626576.jpg")' ){
+                body.style.backgroundImage
             }
         }
-        swap(array, split + 1, right)
-        return split
-    }
-
-    let qSortRec = function (array, left, right) {
-        if (left >= right) {
-            return
+        button.onclick = function() {
+            if (text_to_show.style.display !== 'none') {
+                text_to_show.style.display = 'none'
+            }
+            else{
+                text_to_show.style.display = 'flex'
+            }
         }
+        text_to_show.display = 'none'
 
-        let mid = partition(array, left, right);
-        qSortRec(array, left, mid);
-        qSortRec(array, mid + 1, right);
     }
-
-    return qSortRec(array, 0, array.length - 1);
-}
-
-const printTagsCount = function () {
-    let document = new Document('skills.html')
-    let map = new Map()
-    for (const tag of document.querySelectorAll('skills.html')) {
-        let name = tag.tagName
-        if (!map.has(name)) {
-            map.set(name, 0)
-        }
-        map.set(name, map.get(name) + 1)
-    }
-    console.log(map)
-}
-let myArray = randomizedArray(1000, 0, 100000)
-
-console.log(myArray)
-console.log('min', getMin(myArray))
-console.log('max', getMax(myArray))
-console.log('med', getMedian(myArray))
-
-quickSort(myArray)
-console.log(myArray)
-console.log('med', getMedian(myArray))
-
-printTagsCount()
 </script>
-
 <body>
 <header>
     <ul class="panel">
         <li>
-            <div class="icon-navigation">
+            <button id="button"><img src="/pict/Other-Mail-Metro-icon.png"> </button>
+            <ul id='icon-navigation' class="icon-navigation">
                 <a href="https://vk.com/delete0your0page"><img src="/pict/vk_icon-icons%201.png"></a>
                 <a href="https://github.com/Destrolaric"><img src="/pict/GitHub-Mark-32px%201.png"></a>
                 <a href="https://t.me/Zestaras"><img src="/pict/telegram_icon-icons%201.png"></a>
-            </div>
+            </ul>
         </li>
         <li>
             <ul class="text-navigation">
@@ -133,7 +160,7 @@ printTagsCount()
         <h2>
             Обо мне
         </h2>
-        <p><img src="/pict/No_Picture.jpg">
+        <p><div class="pict" id='picture'><img src="/pict/No_Picture.jpg"></div>
             На данный момент являюсь студентом третьего курса факультета информационных технологий университета.
             <strong>ИТМО</strong>.
             Проживаю в Санкт-Петербурге, Центральный район.
